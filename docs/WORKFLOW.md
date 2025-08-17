@@ -3,7 +3,7 @@
 ## Step-by-Step Process
 
 1. **Image Selection**
-    - Images stored in cloud storage.
+    - Images stored in google drive cloud storage.
     - Main script selects the next image to post.
 
 2. **Caption Generation**

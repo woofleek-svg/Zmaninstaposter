@@ -477,3 +477,33 @@ if __name__ == "__main__":
     except Exception as e:
         logger.error(f"Application error: {e}")
         exit(1)
+
+def download_image_from_bucket(blob_name: str, local_path: str) -> bool:
+    """
+    Download an image from the configured Google Cloud Storage bucket.
+
+    Args:
+        blob_name: Name of the blob (file) in the bucket
+        local_path: Local path to save the downloaded image
+
+    Returns:
+        True if download succeeds, False otherwise
+    """
+    if not storage_manager.bucket:
+        logger.error("Google Cloud Storage not properly configured")
+        return False
+
+    try:
+        blob = storage_manager.bucket.blob(blob_name)
+        blob.download_to_filename(local_path)
+        logger.info(f"Downloaded {blob_name} to {local_path}")
+        return True
+    except Exception as e:
+        logger.error(f"Failed to download {blob_name}: {e}")
+        return False
+
+# Example usage (uncomment to use):
+# blobs = storage_manager.bucket.list_blobs()
+# for blob in blobs:
+#     print(blob.name)
+#     # download_image_from_bucket(blob.name, f"./downloads/{blob.name}")
