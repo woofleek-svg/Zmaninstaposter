@@ -19,28 +19,34 @@ The system will ensure no duplicate postings and can be configured for posting f
 
 ## Quick Start
 
-1. **Install Dependencies**:
+1. **Set Up Virtual Environment** (Recommended):
+   ```bash
+   python -m venv zmaninstaposter-env
+   source zmaninstaposter-env/bin/activate  # On Windows: zmaninstaposter-env\Scripts\activate
+   ```
+
+2. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-2. **Configure APIs** (see [SETUP.md](SETUP.md) for detailed instructions):
+3. **Configure APIs** (see [SETUP.md](SETUP.md) for detailed instructions):
    - Set up Instagram Graph API access
    - Create Google Cloud Storage bucket
    - Get Gemini AI API key
 
-3. **Set Environment Variables**:
+4. **Set Environment Variables**:
    ```bash
    cp .env.example .env
    # Edit .env with your actual credentials
    ```
 
-4. **Test Configuration**:
+5. **Test Configuration**:
    ```bash
    python test_config.py
    ```
 
-5. **Run the Application**:
+6. **Run the Application**:
    ```bash
    python src/main.py
    ```

@@ -7,12 +7,35 @@ Zmaninstaposter is an automated Instagram posting tool that:
 - Posts to Instagram using the Graph API
 
 ## Prerequisites
-1. Instagram Business or Creator account
-2. Facebook Page linked to your Instagram account
-3. Google Cloud Platform account
-4. Google AI Studio access
+1. Python 3.8 or higher
+2. Instagram Business or Creator account
+3. Facebook Page linked to your Instagram account
+4. Google Cloud Platform account
+5. Google AI Studio access
 
 ## Setup Instructions
+
+### 0. Python Virtual Environment Setup (Recommended)
+
+1. **Create Virtual Environment**:
+   ```bash
+   python -m venv zmaninstaposter-env
+   ```
+
+2. **Activate Virtual Environment**:
+   ```bash
+   # On Linux/macOS:
+   source zmaninstaposter-env/bin/activate
+   
+   # On Windows:
+   zmaninstaposter-env\Scripts\activate
+   ```
+
+3. **Verify Activation**:
+   ```bash
+   which python  # Should point to virtual environment
+   python --version  # Should show Python 3.8+
+   ```
 
 ### 1. Instagram Graph API Setup
 **REQUIRED**: Follow these steps to enable Instagram posting:
@@ -96,8 +119,11 @@ Zmaninstaposter is an automated Instagram posting tool that:
 
 ### 5. Install Dependencies
 ```bash
+# Make sure virtual environment is activated
 pip install -r requirements.txt
 ```
+
+**Note**: If you encounter permission errors, ensure your virtual environment is activated or use `pip install --user -r requirements.txt`
 
 ### 6. Test Configuration
 ```bash
