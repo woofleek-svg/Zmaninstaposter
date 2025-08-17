@@ -1,6 +1,10 @@
 # Zmaninstaposter
 
 An automated Instagram posting tool that uses Google Cloud Storage for image hosting and Google's Gemini AI for caption generation.
+Updated Plan:
+The project will now post older pictures from a designated Google Drive folder to your dad’s art business Instagram account on a configurable schedule.
+When new pictures are uploaded to the Google Drive folder, the system will automatically post them to Instagram as well.
+The system will ensure no duplicate postings and can be configured for posting frequency and other options.
 
 ## Features
 
@@ -10,6 +14,8 @@ An automated Instagram posting tool that uses Google Cloud Storage for image hos
 - ⏰ **Scheduled Posting**: Configurable daily posting schedule
 - 🔒 **Secure Configuration**: Environment-based credential management
 - 📊 **Comprehensive Logging**: Detailed logging for monitoring and debugging
+
+
 
 ## Quick Start
 
