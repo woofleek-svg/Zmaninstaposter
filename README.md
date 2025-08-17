@@ -6,6 +6,23 @@ The project will now post older pictures from a designated Google Drive folder t
 When new pictures are uploaded to the Google Drive folder, the system will automatically post them to Instagram as well.
 The system will ensure no duplicate postings and can be configured for posting frequency and other options.
 
+## 🕒 Last 24hrs Update
+
+This section highlights notable changes, updates, and activities in the repository over the past 24 hours.
+
+- **Commits:**  
+  _No recent commit summary yet. Add your latest changes here!_
+
+- **Issues & Discussions:**  
+   -   Waiting on Identity Confirmation from Facebook
+
+- **Pull Requests:**  
+  _No new pull requests or merges in the last 24 hours._
+
+---
+
+_Keep this section up-to-date to give contributors and visitors a quick overview of what's happening!_
+
 ## Features
 
 - 📸 **Automated Image Selection**: Pulls images from Google Cloud Storage
