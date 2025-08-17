@@ -1,0 +1,30 @@
+2025-08-17 05:01:04,699 - INFO - Configuration loaded successfully
+2025-08-17 05:01:16,783 - ERROR - Failed to initialize Google Cloud Storage client: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-08-17 05:01:16,783 - WARNING - Gemini API key not configured. Using placeholder captions.
+2025-08-17 05:01:16,783 - INFO - Starting Zmaninstaposter configuration tests...
+2025-08-17 05:01:16,783 - INFO - ==================================================
+2025-08-17 05:01:16,783 - INFO - Testing configuration...
+2025-08-17 05:01:16,783 - WARNING - Configuration issues found:
+2025-08-17 05:01:16,783 - WARNING -   - Google Cloud Storage not properly configured
+2025-08-17 05:01:16,783 - WARNING -   - Gemini AI not properly configured
+2025-08-17 05:01:16,784 - WARNING -   - Instagram access token not configured
+2025-08-17 05:01:16,784 - WARNING -   - Instagram user ID not configured
+2025-08-17 05:01:16,784 - WARNING - Please check .env file and config/config.yaml
+2025-08-17 05:01:16,784 - INFO - Testing Google Cloud Storage...
+2025-08-17 05:01:16,784 - WARNING - Using placeholder images from config
+2025-08-17 05:01:16,784 - INFO - Found 3 images in storage
+2025-08-17 05:01:16,784 - INFO - Sample images:
+2025-08-17 05:01:16,784 - INFO -   1. https://storage.googleapis.com/your-bucket/image1.jpg
+2025-08-17 05:01:16,784 - INFO -   2. https://storage.googleapis.com/your-bucket/image2.jpg
+2025-08-17 05:01:16,784 - INFO -   3. https://storage.googleapis.com/your-bucket/image3.jpg
+2025-08-17 05:01:16,784 - INFO - Testing Gemini AI caption generation...
+2025-08-17 05:01:16,784 - INFO - Using placeholder caption: 🎨 Beauty is everywhere when you know where to look! 🌈 #art #inspiration #beautiful
+2025-08-17 05:01:16,784 - INFO - Generated test caption: 🎨 Beauty is everywhere when you know where to look! 🌈 #art #inspiration #beautiful
+2025-08-17 05:01:16,784 - INFO - ==================================================
+2025-08-17 05:01:16,784 - INFO - Test Results Summary:
+2025-08-17 05:01:16,784 - INFO -   Configuration: ❌ FAIL
+2025-08-17 05:01:16,785 - INFO -   Cloud Storage: ✅ PASS
+2025-08-17 05:01:16,785 - INFO -   Gemini AI:     ✅ PASS
+2025-08-17 05:01:16,785 - ERROR - 
+❌ Some tests failed. Please check your configuration.
+2025-08-17 05:01:16,785 - ERROR - See SETUP.md for detailed setup instructions.
