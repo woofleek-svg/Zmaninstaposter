@@ -102,9 +102,8 @@ class GoogleCloudStorageManager:
             for blob in blobs:
                 # Only include image files
                 if blob.name.lower().endswith(('.jpg', '.jpeg', '.png', '.webp')):
-                    # Generate public URL
-                    public_url = f"https://storage.googleapis.com/{self.bucket_name}/{blob.name}"
-                    image_urls.append(public_url)
+                    # Use the recommended public_url attribute
+                    image_urls.append(blob.public_url)
             
             logger.info(f"Found {len(image_urls)} images in cloud storage")
             return image_urls
